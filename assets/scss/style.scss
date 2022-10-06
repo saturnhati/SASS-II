@@ -1,4 +1,93 @@
+// Import my partial for variables
+@import "./variables";
+
+// Import the bootstrap source
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Import scss files
+@import "./mixin";
+@import "./titles";
+
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary;
+    padding: {
+        left: 10px;
+        right: 10px;
+        top: 12px;
+        bottom: 12px;
+    }
+    a {
+        padding: {
+            left: 8px;
+            right: 8px;
+        }
+        text-decoration: none;
+    }
+    .navbar-toggler {
+        border: none;
+    }
+}
+
+.main {
+    .sidebar {
+        @include sm {
+            height: 100vh;
+        }
+        a {
+            color: $primary;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        hr {
+            border-top: 2px solid;
+            color: $primary;
+            width: 80%;
+        }
+    }
+}
+
+.light {
+    color: $light;
+    font-style: italic;
+}
+.dark {
+    color: $dark;
+    font-weight: 700;
+}
+
+img {
+    width: 100%;
+}
+
+.about-us {
+    h3 {
+        margin: {
+            top: 2rem;
+            bottom:1rem;
+        }
+    }
+}
+
+footer {
+    p {
+        font-size: 0.7rem;
+    }
 }

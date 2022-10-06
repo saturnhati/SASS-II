@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>SASS II</title>
+  </head>
+  <body>
+    <header class="navbar navbar-expand-md bg-dark justify-content-between">
+      <a class="navbar-brand" href="./index.html"><h1 class="text-white ms-2" href="#">NAME</h1></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars text-white"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+        <ul class="navbar-nav mb-lg-0 ms-3">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="./about-us.html">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="./contacts.html">CONTACTS</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="main row m-0">
+      <div class="sidebar col-sm-4 col-lg-3 bg-secondary p-0">
+        <nav class="nav flex-column align-items-center pt-3">
+          <h3 class="fs-5">SIDEBAR LINKS</h3>
+          <hr />
+          <a class="nav-link" href="#">Link 1</a>
+          <hr />
+          <a class="nav-link" href="#">Link 2</a>
+          <hr />
+          <a class="nav-link" href="#">Link 3</a>
+          <hr />
+          <a class="nav-link" href="#">Link 4</a>
+          <hr />
+        </nav>
+      </div>
+      <div class="col-sm-8 col-lg-9 p-0">
+        <div class="container p-4 p-lg-5">
+          <img class="mb-3 rounded" src="https://picsum.photos/1200/600" />
+          <h2>TITOLO 1</h2>
+          <p>Lorem ipsum dolor sit amet, <span class="light">consectetur adipisicing elit</span>. Molestias cum exercitationem impedit autem nostrum eius excepturi inventore fugit illum pariatur. Aliquid aliquam eius reprehenderit sint pariatur voluptates nesciunt. Nesciunt, doloribus!</p>
+          <h2>TITOLO 2</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, debitis maiores perferendis fuga et unde totam temporibus rerum, eveniet autem quam iusto neque asperiores cupiditate deserunt beatae incidunt ipsa quas.</p>
+          <h2>TITOLO 3</h2>
+          <p>Lorem <span class="dark">ipsum dolor</span> sit amet consectetur, adipisicing elit. Ad minus aliquam rem. Ratione quas molestiae ipsam voluptate error sequi iusto perferendis voluptatum est. Aliquid doloremque maxime neque distinctio officiis odit!</p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer text-center bg-dark text-white py-1">
+      <p class="pt-2">&copy; 2022 Lorem ipsum dolor sit amet</p>
+    </footer>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/51292258d4.js" crossorigin="anonymous"></script>
+  </body>
+</html>
