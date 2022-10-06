@@ -40,6 +40,9 @@ header {
     .navbar-toggler {
         border: none;
     }
+    .navbar-toggler:focus {
+        box-shadow: unset;
+    }
 }
 
 .main {

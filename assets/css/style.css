@@ -10817,6 +10817,9 @@ header a {
 header .navbar-toggler {
   border: none;
 }
+header .navbar-toggler:focus {
+  box-shadow: unset;
+}
 
 @media (min-width: 576px) {
   .main .sidebar {
